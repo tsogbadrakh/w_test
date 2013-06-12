@@ -1,0 +1,17 @@
+	<option value="0">All categories</option>
+	<option value="0">----------------------</option>
+	<option value="2">Art & Antiques</option>
+	<option value="29">Books</option>
+	<option value="68">Clothing & Accessories</option>
+	<option value="72">Coins & Stamps</option>
+	<option value="75">Collectibles</option>
+	<option value="113">Comics, Cards & Science Fiction</option>
+	<option value="122">Computers & Software</option>
+	<option value="127">Electronics & Photography</option>
+	<option value="133">Home & Garden</option>
+	<option value="143">Movies & Video</option>
+	<option value="150">Music</option>
+	<option value="157">Office & Business</option>
+	<option value="162">Other Goods & Services</option>
+	<option value="170">Sports & Recreation</option>
+	<option value="174">Toys & Games</option>

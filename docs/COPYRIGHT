@@ -1,0 +1,32 @@
+-- Copyrights --
+
+WeBid (c) 2008 - 2012 WeBidSupport.com
+
+WeBid contains code from the following packages:
+
+GPL licenced:
+phpBB3 (c) 2000, 2002, 2005, 2007 phpBB Group http://www.phpbb.com/
+phpAuction GPL (c) 2007 Phpauction.net http://www.phpauction.net/
+NuSOAP - SOAP Toolkit for PHP (c) 2002 NuSphere Corporation http://www.nusphere.com/
+
+WeBid contains the following packages:
+
+GPL licenced:
+CKeditor (c) 2003-2008 Frederico Caldeira Knabben http://www.ckeditor.net/
+jQuery (c) 2008 John Resig http://www.jquery.com/
+htmLawed (C) 2012 Santosh Patnaik
+
+GNU Lesser General Public License:
+Securimage (c) 2007 Drew Phillips
+http://www.phpcaptcha.org
+
+Creative Commons Attribution 2.5 License:
+Silk Icons
+http://www.famfamfam.com/lab/icons/silk/
+
+CC Attribution-No Derivative Works:
+jQuery lightBox plugin (c) 2008 Leandro Vieira Pinho http://leandrovieira.com/
+
+Other:
+reCaptcha PHP API (c) 2007 reCAPTCHA
+http://recaptcha.net/
