@@ -1,0 +1,289 @@
+/*
+
+Theme name: Bootstrap Webid barebone theme
+Theme description: Bootstrap Webid barebone theme allows for custom developement on new webid themes based on Webid free auction script
+Theme URL: http://www.webidsupport.com/forums/showthread.php?6132-Webid-1-0-6-Bootsrap-HTML-5-Responsive-barebone-theme
+
+Author: Lucas Kozlowski 
+Follow me on Twitter: @1wski
+View my profile on Webid: http://www.webidsupport.com/forums/member.php?27522-kaerte
+
+
+*/
+
+
+/* 
+
+Styles that need to be tuned in
+
+
+.highlighted
+.highlighted:hover
+- highlighted item background that need to be adjusted to your theme - default pale yellow
+
+.featured-item
+.featured-item a
+- featured items on front page - box and link font size 
+
+.sender-mail
+- in messages conversation default #CCCCCC (grey)
+
+if you wish to change image sizes modyfi css rules in media queries section at the bottom
+
+
+ */
+
+
+/*footer*/
+.footer {padding-top:20px;}
+
+/* calendar icon */
+.ui-datepicker-trigger { margin-left: 10px }
+
+/* browse tables */
+.table-row-click { }
+.table-row-click:hover {
+    cursor: pointer;
+    background-color: #FBFBF9;
+}
+.highlighted { background-color: #fcf8e3 }
+.highlighted:hover { background-color: #f9f5e0 }
+
+
+.flags-icons {
+    text-align: right;
+    margin-bottom: 5px;
+}
+.flags-icons a img { width: 20px }
+
+/* mail conversation */
+.sender-mail { color: #CCCCCC }
+
+/* gallery img */
+#gallery img { margin: 3px }
+
+/* check box inline right margin */
+.c-margin { margin-right: 10px }
+
+/*footer*/
+.footer { text-align: center }
+
+/* tr highlight */
+.table tbody tr.warning td { background-color: #fcf8e3 }
+
+/*legend*/
+legend { border-bottom: 1px solid #e5e5e5 }
+legend small {
+    font-size: 15px;
+    color: #999999;
+}
+
+/* image size in item watch list*/
+.td-image img {
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* image size in item browse list*/
+.tdb-image img {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.tdb-image { text-align: center }
+.table-center tr td,
+.table-center tr th { text-align: center }
+.table-browse-center tr td,
+.table-browse-center tr th { text-align: left }
+
+/* user menu li active links disable hand cursor*/
+.active a { cursor: default }
+.list-title a { font-size: 16px }
+
+/* adjust forms in register, front page login */
+.register-date select,
+.register-date input { width: auto }
+
+/* main menu categories dropdown with pills */
+.categories-dropdown { }
+.categories-dropdown a { }
+.categories-dropdown a:hover { text-decoration: none }
+.single-cat-dopdown { margin: 10px }
+.single-cat-dopdown a:hover { text-decoration: none }
+.categories-dropdown .nav-collapse .nav > li > a:hover,
+.categories-dropdown .nav-collapse .dropdown-menu a:hover { padding: 0 }
+
+/*login-right*/
+.login-checkbox {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.login-button { width: 220px }
+.seller-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.seller-list li { list-style-type: none }
+
+/*footer*/
+.footer { margin: 5px 0px 20px 0px }
+.copyright { text-align: center }
+.main-navigation .nav > li > .dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    display: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+.main-navigation .dropdown-menu {
+    top: 60px;
+    left: -240px;
+    margin: 0 auto;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.navbar .nav > li > .dropdown-menu:after,
+.navbar .nav > li > .nav > li > .dropdown-menu:before {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    display: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+.navbar .nav > li > .dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    display: none;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+/*top menu fix*/
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: fixed;
+    margin: 0;
+}
+
+.tr-timeleft { text-align: right }
+.btn-place-bid { float: right }
+
+/*media queries*/
+
+@media (max-width: 767px) {
+.mini-img {width:200px;}
+}
+
+@media (min-width: 1200px) {
+
+.tdb-image img {padding:3px; height:170px; width:170px}
+.mini-img {width:190px;}
+
+.browse-mini {font-size:16px; margin-bottom:5px;}
+
+.categories-dropdown a {font-size:16px;}
+.tdb-image img {
+padding:4px;
+  height:150px; width:150px;
+  }
+.tdb-image {text-align:center}
+/*feaTURED IMAGE*/
+.featured-item {height:255px;}
+.featured-item img {height:190px;width:190px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+.mini-img {width:85px;}
+.tdb-image img {
+padding:4px;
+  height:80px; width:80px;
+  }
+.tdb-image {text-align:center}
+/*feaTURED IMAGE*/
+.featured-item {height:255px;}
+.featured-item img {height:100px; width:100px}
+}
+
+@media (max-width: 767px) {
+
+.tdb-image img {
+padding:4px;
+  height:50px; width:50px;
+  }
+.tdb-image {text-align:center}
+
+/*feaTURED IMAGE*/
+.featured-item {height:215px; float:left; width:45%;}
+.featured-item div {margin:0px 10px 0px 10px;}
+.featured-item img {height:120px;}
+}
+
+
+@media (max-width: 480px) {
+
+.mini-img {width:55px;}
+#lightbox-container-image-box {width:100%}
+#lightbox-container-image-data-box {width:100%;}
+
+.featured-item {text-align:center; width:50%; float:left; height:220px;}
+
+.featured-item img {width:100px; height:100px;}
+.mini-img {width:55px;}
+.tdb-image img {
+  height:50px; width:50px;
+  padding:1px;
+  }
+.tdb-image {text-align:center}
+}
+
+
+@media (max-width: 979px) {
+.mini-img {width:85px;}
+.logo-holder {text-align:center;}
+
+.categories-dropdown a {font-size:12px;}
+
+  body {
+    padding-top: 50px;
+  }
+  }
+  
+  @media (min-width: 980px) {
+.tdb-image img {padding:3px; height:130px; width:130px}
+.mini-img {width:150px;}
+.tr-title {width:400px}
+.tr-bids { width:80px;}
+.tr-bidsno{ width:50px}
+.tr-timeleft{ text-align:right; width:100px}
+/*feaTURED IMAGE*/
+.featured-item {height:255px;}
+.featured-item img {height:130px;width:130px;}
+.browse-mini {font-size:14px; margin-bottom:3px;}
+
+}

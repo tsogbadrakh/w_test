@@ -1,0 +1,157 @@
+19-04-2013, 03:27:58:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+19-04-2013, 03:35:42:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+19-04-2013, 03:36:52:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+19-04-2013, 03:49:16:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\includes\functions_admin.php line 98
+19-04-2013, 03:53:29:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+19-04-2013, 06:03:54:: Unknown error type: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. on C:\xampp\htdocs\WeBid\includes\banners.inc.php line 38
+19-04-2013, 06:04:35:: Unknown error type: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. on C:\xampp\htdocs\WeBid\includes\banners.inc.php line 38
+19-04-2013, 06:06:03:: Unknown error type: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. on C:\xampp\htdocs\WeBid\includes\banners.inc.php line 38
+19-04-2013, 06:20:12:: Unknown error type: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. on C:\xampp\htdocs\WeBid\includes\banners.inc.php line 38
+13-05-2013, 06:26:13:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+13-05-2013, 06:27:57:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+13-05-2013, 06:38:41:: Unknown error type: [2] fopen(C:\xampp\htdocs\WeBid\themes/default-new/): failed to open stream: No such file or directory on C:\xampp\htdocs\WeBid\admin\theme.php line 41
+13-05-2013, 08:01:56:: Unknown error type: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. on C:\xampp\htdocs\WeBid\includes\banners.inc.php line 38
+13-05-2013, 08:02:27:: Database access error. Please contact the site administrator.	SELECT description FROM webid_durations WHERE days = 
+	You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	page:C:\xampp\htdocs\WeBid\sell.php line:436
+21-05-2013, 08:59:33:: <b>My ERROR</b> [256] Template path could not be found: themes/webid-bootsrap-standard
+  Fatal error on line 66 in file C:\xampp\htdocs\WeBid\includes\template.php, PHP 5.4.7 (WINNT)
+Aborting...
+21-05-2013, 08:59:38:: <b>My ERROR</b> [256] Template path could not be found: themes/webid-bootsrap-standard
+  Fatal error on line 66 in file C:\xampp\htdocs\WeBid\includes\template.php, PHP 5.4.7 (WINNT)
+Aborting...
+21-05-2013, 08:59:42:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+21-05-2013, 09:05:45:: Unknown error type: [2] file_get_contents(http://www.webidsupport.com/version.txt):  on C:\xampp\htdocs\WeBid\admin\index.php line 169
+22-05-2013, 07:41:43:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.global_header.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+22-05-2013, 07:41:43:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.file.global_header.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+22-05-2013, 07:41:43:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.file.global_header.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+22-05-2013, 07:41:43:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.global_header.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+22-05-2013, 07:41:43:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\fe67c8ec6cdef9121c61f121d054a0437e0848c9.home.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+22-05-2013, 07:41:43:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+22-05-2013, 07:43:12:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\fe67c8ec6cdef9121c61f121d054a0437e0848c9.home.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+22-05-2013, 07:43:12:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+22-05-2013, 07:43:12:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+22-05-2013, 07:43:12:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\fe67c8ec6cdef9121c61f121d054a0437e0848c9.home.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+22-05-2013, 07:43:12:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\fa061fb4ba4eed01470c7c7ca612d26fab01713d.global_footer.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+22-05-2013, 07:43:12:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\fa061fb4ba4eed01470c7c7ca612d26fab01713d.file.global_footer.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+22-05-2013, 07:43:12:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\fa061fb4ba4eed01470c7c7ca612d26fab01713d.file.global_footer.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+22-05-2013, 07:43:12:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\fa061fb4ba4eed01470c7c7ca612d26fab01713d.global_footer.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+22-05-2013, 08:03:14:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates\header on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 349
+22-05-2013, 08:03:14:: Unknown error type: [2] filemtime(): stat failed for header on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 349
+22-05-2013, 08:03:27:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates\header on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 349
+22-05-2013, 08:03:27:: Unknown error type: [2] filemtime(): stat failed for header on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 349
+22-05-2013, 08:06:30:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates\header on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 349
+22-05-2013, 08:06:30:: Unknown error type: [2] filemtime(): stat failed for header on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 349
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 270
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'TITLE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 271
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 270
+22-05-2013, 09:13:54:: Unknown error type: [2] Illegal string offset 'TITLE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 271
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 85
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 87
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 88
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 89
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 90
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 270
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'TITLE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 271
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 270
+23-05-2013, 07:34:39:: Unknown error type: [2] Illegal string offset 'TITLE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 271
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 42
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 44
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 45
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 46
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 47
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 42
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 44
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 45
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 46
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 47
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 42
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 44
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 45
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 46
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 47
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'COLOUR' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 42
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 44
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'IMAGE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 45
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'NAME' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 46
+23-05-2013, 07:42:23:: Unknown error type: [2] Illegal string offset 'CATAUCNUM' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 47
+23-05-2013, 08:30:52:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 271
+23-05-2013, 08:30:52:: Unknown error type: [2] Illegal string offset 'TITLE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 272
+23-05-2013, 08:30:52:: Unknown error type: [2] Illegal string offset 'ID' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 271
+23-05-2013, 08:30:52:: Unknown error type: [2] Illegal string offset 'TITLE' on C:\xampp\htdocs\WeBid\templates_c\fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php line 272
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 08:52:03:: <b>My NOTICE</b> [1024] Undefined property: Smarty_Init::$_tpldata on C:\xampp\Smarty\libs\Smarty.class.php line 671
+23-05-2013, 09:59:13:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\eng_^eng_^ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.global_header.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+23-05-2013, 09:59:13:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\eng_^ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.file.global_header.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+23-05-2013, 09:59:13:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\eng_^ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.file.global_header.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+23-05-2013, 09:59:13:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\eng_^eng_^ab1dc6ded91ab9786e157c1a9a9c260b6d9bb2ab.global_header.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+23-05-2013, 09:59:13:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\eng_^eng_^fe67c8ec6cdef9121c61f121d054a0437e0848c9.home.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+23-05-2013, 09:59:13:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\eng_^fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+23-05-2013, 09:59:13:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\eng_^fe67c8ec6cdef9121c61f121d054a0437e0848c9.file.home.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+23-05-2013, 09:59:13:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\eng_^eng_^fe67c8ec6cdef9121c61f121d054a0437e0848c9.home.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+23-05-2013, 09:59:13:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\eng_^eng_^fa061fb4ba4eed01470c7c7ca612d26fab01713d.global_footer.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+23-05-2013, 09:59:13:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\eng_^fa061fb4ba4eed01470c7c7ca612d26fab01713d.file.global_footer.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+23-05-2013, 09:59:13:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\eng_^fa061fb4ba4eed01470c7c7ca612d26fab01713d.file.global_footer.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+23-05-2013, 09:59:13:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\eng_^eng_^fa061fb4ba4eed01470c7c7ca612d26fab01713d.global_footer.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+11-06-2013, 08:07:58:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/cache\42a9963d95025547ee6259bdcd11d7289fd9497b.browsecats.tpl.php on C:\xampp\Smarty\libs\sysplugins\smarty_internal_cacheresource_file.php line 64
+11-06-2013, 08:07:58:: Unknown error type: [2] filemtime(): stat failed for ../../htdocs/WeBid/templates_c\42a9963d95025547ee6259bdcd11d7289fd9497b.file.browsecats.tpl.cache.php on C:\xampp\Smarty\libs\sysplugins\smarty_resource.php line 720
+11-06-2013, 08:07:58:: Unknown error type: [2] unlink(../../htdocs/WeBid/templates_c\42a9963d95025547ee6259bdcd11d7289fd9497b.file.browsecats.tpl.cache.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
+11-06-2013, 08:07:58:: Unknown error type: [2] unlink(../../htdocs/WeBid/cache\42a9963d95025547ee6259bdcd11d7289fd9497b.browsecats.tpl.php): No such file or directory on C:\xampp\Smarty\libs\sysplugins\smarty_internal_write_file.php line 57
