@@ -1,0 +1,12 @@
+1.0.6 - 02/12/12
+-----------------------------
+- Security Fixes
+- Limited allowable HTML elements in sell description
+- Replaced hard coded language strings with {L_ variables (thanks Dahlsvarehus.com)
+- Fixed change category link resetting all the entered auction data (thanks preppergearxchange)
+- Removed double error message on Buy Now page (thanks nay27uk)
+- Added missing T&C text from registration page (thanks Dahlsvarehus.com)
+- Replaced HTMLPurifier with htmLawed
+- Categories re-sync crashing with second category option enabled (thanks pani100)
+
+for older changes check out http://www.webidsupport.com/wiki/Change_Log
