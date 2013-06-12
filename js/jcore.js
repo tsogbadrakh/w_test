@@ -552,6 +552,9 @@ jwbid.MenuManager = mObj.extend({
         }
     },
 
+    /***
+     * 
+     */
     menuClick : function(elmnt)
     {
         var id = elmnt.getAttribute("id");
