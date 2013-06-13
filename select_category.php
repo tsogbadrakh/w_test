@@ -49,11 +49,15 @@ while (true)
 	$POST['cat' . $i] = $_POST['cat' . $i];
 	$i++;
 }
-
-if (isset($_POST['action']) && $_POST['action'] == 'process' && $_POST['box'] == '')
+$template->assign(array(
+        'B_N' => $box,
+	'cat0' => $_POST['cat0'],
+        'cat1' => $_POST['cat1']
+        ));
+if (isset($_POST['action']) && $_POST['action'] == 'process' && $_POST['box'] == '0')
 {
     $_SESSION['action'] = 1;
-	$VARNAME = 'cat' . (count($POST) - 1);
+	$VARNAME = 'cat' . ($cat_no - 1);
 	$_SESSION['SELL_sellcat' . $cat_no] = $POST[$VARNAME];
 	$query = "SELECT left_id, right_id FROM " . $DBPrefix . "categories WHERE cat_id = " . intval($_POST[$VARNAME]);
 	$res = mysql_query($query);
@@ -61,16 +65,16 @@ if (isset($_POST['action']) && $_POST['action'] == 'process' && $_POST['box'] ==
 	$lft_rgt = mysql_fetch_assoc($res);
 	if ($lft_rgt['left_id'] + 1 == $lft_rgt['right_id'])
 	{
-		if ($system->SETTINGS['extra_cat'] == 'n' || ($cat_no == 2 && $system->SETTINGS['extra_cat'] == 'y'))
-		{
-			header('location: sell.php');
-			exit;
-		}
-		else
-		{
+//		if ($system->SETTINGS['extra_cat'] == 'n' || ($cat_no == 2 && $system->SETTINGS['extra_cat'] == 'y'))
+//		{
+//			header('location: sell.php');
+//			exit;
+//		}
+//		else
+//		{
 			header('location: select_category.php?cat_no=2');
 			exit;
-		}
+//		}
 	}
 	else
 	{
@@ -148,7 +152,7 @@ for ($i = 0; $i <= $box; $i++)
 	}
 	else
 	{
-		$query = "SELECT left_id, right_id, level FROM " . $DBPrefix . "categories WHERE cat_id = " . intval($parent);
+		$query = "SELECT left_id, right_id, level FROM " . $DBPrefix . "categories WHERE parent_id = " . intval($parent);
 	}
 	if ($safe_box)
 	{
@@ -172,22 +176,30 @@ for ($i = 0; $i <= $box; $i++)
 }
 
 $boxes = count($boxarray);
+$template->assign('test', $boxes);
+
+$tmpArray = array();
 for ($i = 0; $i < $boxes; $i++)
 {
-	$template->assign_block_vars('boxes', array(
-			'B_NOWLINE' => (($i % 2 == 0) && ($i > 0)),
-			'I' => $i,
-			'PERCENT' => ($boxes == 1) ? 100 : ($boxes == 2) ? 50 : 33
-			));
+        $catarr = Array();
 	foreach ($boxarray[$i] as $k => $v)
 	{
-		$template->assign_block_vars('boxes.cats', array(
+                $row_count = (isset($catarr)) ? sizeof($catarr) : 0;
+                $catarr[($row_count - 1)] = 
+                                array(
 				'K' => $k,
 				'CATNAME' => $category_names[$k],
 				'SELECTED' => (isset($POST['cat' . $i]) && $POST['cat' . $i] == $k) ? ' selected' : ''
-				));
+				);
 	}
+        $row_cnt = (isset($tmpArray)) ? sizeof($tmpArray) : 0;
+        $tmpArray[($row_cnt - 1)] = ( array(
+			'B_NOWLINE' => (($i % 2 == 0) && ($i > 0)),
+			'I' => $i,
+			'PERCENT' => ($boxes == 1) ? 100 : ($boxes == 2) ? 50 : 33,
+			'cats' => $catarr));
 }
+$template->assign('boxes', $tmpArray);
 
 $extra_cat = 0;
 if ($cat_no == 2)
@@ -198,17 +210,15 @@ if ($cat_no == 2)
 	$extra_cat = mysql_result($res, 0);
 }
 
-$template->assign_vars(array(
+$template->assign(array(
         'B_SHOWBUTTON' => $SHOWBUTTON,
 		'CAT_NO' => $cat_no,
 		'COST' => ($extra_cat > 0) ? $system->print_money($extra_cat) : '',
         'ERROR' => (isset($ERR)) ? $ERR : ''
         ));
 
-include 'header.php';
-$template->set_filenames(array(
-        'body' => 'select_category.tpl'
-        ));
-$template->display('body');
-include 'footer.php';
+//include 'header.php';
+//$template->set_filenames(array('body' => 'select_category.tpl'));
+$template->display('default/select_category.tpl');
+//include 'footer.php';
 ?>
