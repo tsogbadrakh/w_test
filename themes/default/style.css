@@ -195,7 +195,6 @@ input[type="text"], input[type="password"], select, textarea {
 .wb-contents{
     float: left;
     margin-bottom: 10px;
-    height: 271px;
     overflow: hidden;
     position: relative;
     width: 759px;
