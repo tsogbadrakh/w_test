@@ -34,7 +34,8 @@ function SubmitBoxes(N)
 		<tr> 
 {foreach $boxes as $bx}
 		  <td align="center" style="width:{$bx.PERCENT}%;">
-			  <select name="cat{$bx.I}" class="box" size="15" onClick="SubmitBoxes({$bx.I})" style="width:230px;">
+                            {*onClick="SubmitBoxes({$bx.I})"*}
+			  <select name="cat{$bx.I}" class="box" size="15" style="width:230px;">
 	{foreach $bx.cats as $bc}
 				<option value="{$bc.K}" {$bc.SELECTED}>{$bc.CATNAME}</option>
 	{/foreach}

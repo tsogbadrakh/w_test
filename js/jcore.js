@@ -297,7 +297,7 @@ jwbid.EventManager = mObj.extend({
     {
         var top = $.getObj(".wb-header");
         var leftmenu = $.getObj(".wb-left-menu");
-        var main = $.getObj(".wb-main");
+        var main = $.getObj(".wb-middle");
         var footer = $.getObj(".wb-footer");
         
         if(top)
@@ -553,9 +553,6 @@ jwbid.MenuManager = mObj.extend({
             case "login":           
                 elmnt.color = "#0654BA";
               break;
-            case name.substr(0,3):
-                
-              break;
         }
     },
 
@@ -572,4 +569,30 @@ jwbid.MenuManager = mObj.extend({
             $(".wb-contents").html(data);
         }); 
     }    
+});
+
+jwbid.BodyManager = mObj.extend({
+
+    init : function()
+    {
+         this.callparent();
+    },
+            
+    deinit: function()
+    {
+        this.callparent();
+    },  
+    
+    onChange : function(elm)
+    {
+        var nm = elm.getAttribute("name");
+        
+        if(nm.substr(0,3) == "cat")
+        {
+            jwbid.ajax.getHTML("logout.php",function(data){
+                    $(".wb-middle").html(data);
+            }); 
+        }
+    }
+    
 });
