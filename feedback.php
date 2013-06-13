@@ -227,7 +227,7 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 			case 0 : $uimg = $system->SETTINGS['siteurl'] . 'images/neutral.png';
 				break;
 		}
-		$template->assign_block_vars('fbs', array(
+		$template->collect_vars(array(
 				'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 				'IMG' => $uimg,
 				'USFLINK' => 'profile.php?user_id=' . $arrfeed['uId'] . '&auction_id=' . $arrfeed['auction_id'],
@@ -241,6 +241,7 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 				));
 		$i++;
 	}
+        $template->assign_blk('fbs');
 	$thispage = (isset($_GET['pg'])) ? $_GET['pg'] : 1;
 	$firstpage = (($thispage - 5) <= 0) ? 1 : ($thispage - 5);
 	$lastpage = (($thispage + 5) > $pages) ? $pages : ($thispage + 5);
@@ -267,7 +268,7 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 // Calls the appropriate templates/templates
 if ((isset($TPL_err) && !empty($TPL_err)) || !isset($_GET['faction']))
 {
-	$template->assign_vars(array(
+	$template->assign(array(
 			'ERROR' => (isset($TPL_errmsg)) ? $TPL_errmsg : '',
 			'USERNICK' => $TPL_nick,
 			'USERFB' => $TPL_feedbacks_sum,
@@ -286,12 +287,10 @@ if ((isset($TPL_err) && !empty($TPL_err)) || !isset($_GET['faction']))
 
 			'B_USERAUTH' => ($system->SETTINGS['usersauth'] == 'y')
 			));
-	include 'header.php';
-	$template->set_filenames(array(
-			'body' => 'feedback.tpl'
-			));
-	$template->display('body');
-	include 'footer.php';
+//	include 'header.php';
+//	$template->set_filenames(array('body' => 'feedback.tpl'));
+	$template->display('feedback.tpl');
+//	include 'footer.php';
 }
 
 if (isset($_GET['faction']) && $_GET['faction'] == 'show')
@@ -311,7 +310,7 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 			}
 		}
 	}
-	$template->assign_vars(array(
+	$template->assign(array(
 			'USERNICK' => $TPL_nick,
 			'USERFB' => $TPL_feedbacks_num,
 			'USERFBIMG' => (isset($TPL_rate_ratio_value)) ? $TPL_rate_ratio_value : '',
@@ -319,11 +318,9 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 			'AUCT_ID' => $auction_id,
 			'ID' => $_REQUEST['id']
 			));
-	include 'header.php';
-	$template->set_filenames(array(
-			'body' => 'show_feedback.tpl'
-			));
-	$template->display('body');
-	include 'footer.php';
+	//include 'header.php';
+//	$template->set_filenames(array('body' => 'show_feedback.tpl'));
+	$template->display('show_feedback.tpl');
+	//include 'footer.php';
 }
 ?>

@@ -462,7 +462,9 @@ jwbid.HeadManager = mObj.extend({
      */
      callMsgBoard : function()
      {
-         
+       jwbid.ajax.getHTML("boards.php",function(data){
+           $(".wb-middle").html(data);
+       }); 
      },
             
     /**
@@ -470,7 +472,7 @@ jwbid.HeadManager = mObj.extend({
      */
      callControlPanel : function()
      {
-         
+
      },
             
     /**
@@ -486,7 +488,9 @@ jwbid.HeadManager = mObj.extend({
      */
      callSellItemPage : function()
      {
-         
+       jwbid.ajax.getHTML("select_category.php",function(data){
+           $(".wb-middle").html(data);
+       });
      },
      
      /**

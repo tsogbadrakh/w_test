@@ -41,10 +41,8 @@ while ($board = mysql_fetch_array($res))
 			));
 }
 
-include 'header.php';
-$template->set_filenames(array(
-		'body' => 'boards.tpl'
-		));
-$template->display('body');
-include 'footer.php';
+//include 'header.php';
+//$template->set_filenames(array('body' => 'boards.tpl'));
+$template->display('boards.tpl');
+//include 'footer.php';
 ?>

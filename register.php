@@ -359,7 +359,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'first')
 					exit;
 				}
 
-				$template->assign_vars(array(
+				$template->assign(array(
 						'L_HEADER' => sprintf($MSG['859'], $TPL_name_hidden),
 						'L_MESSAGE' => $TPL_message
 						));
@@ -417,7 +417,7 @@ $dobday .= '</select>';
 $selectsetting = (isset($_POST['TPL_timezone'])) ? $_POST['TPL_timezone'] : '';
 $time_correction = generateSelect('TPL_timezone', $TIMECORRECTION);
 
-$template->assign_vars(array(
+$template->assign(array(
 		'ERROR' => (isset($ERR)) ? $ERR : '',
 		'L_COUNTRIES' => $country,
 		'L_DATEFORMAT' => ($system->SETTINGS['datesformat'] == 'USA') ? $dobmonth . ' ' . $dobday : $dobday . ' ' . $dobmonth,
@@ -478,10 +478,8 @@ $template->assign_vars(array(
 		'V_PHONE' => (isset($_POST['TPL_phone'])) ? $_POST['TPL_phone'] : ''
 		));
 
-include 'header.php';
-$template->set_filenames(array(
-		'body' => 'register.tpl'
-		));
-$template->display('body');
-include 'footer.php';
+//include 'header.php';
+//$template->set_filenames(array('body' => 'register.tpl'));
+$template->display('register.tpl');
+//include 'footer.php';
 ?>

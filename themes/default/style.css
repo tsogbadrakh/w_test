@@ -195,10 +195,10 @@ input[type="text"], input[type="password"], select, textarea {
 .wb-contents{
     float: left;
     margin-bottom: 10px;
-    overflow: hidden;
+/*    overflow: hidden;
     position: relative;
+    z-index: 10;*/
     width: 759px;
-    z-index: 10;
 }
 .link-btn{
     cursor: pointer;
