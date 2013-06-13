@@ -553,6 +553,9 @@ jwbid.MenuManager = mObj.extend({
             case "login":           
                 elmnt.color = "#0654BA";
               break;
+            case name.substr(0,3):
+                
+              break;
         }
     },
 

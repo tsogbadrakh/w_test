@@ -16,24 +16,24 @@ include 'includes/common.inc.php';
 include $main_path . 'language/' . $language . '/categories.inc.php';
 
 // Is the seller logged in?
-if (!$user->is_logged_in())
-{
-	$_SESSION['REDIRECT_AFTER_LOGIN'] = 'select_category.php';
-	header('location: user_login.php');
-	exit;
-}
+//if (!$user->is_logged_in())
+//{
+//	$_SESSION['REDIRECT_AFTER_LOGIN'] = 'select_category.php';
+//	header('location: user_login.php');
+//	exit;
+//}
 
-if (in_array($user->user_data['suspended'], array(5, 6, 7)))
-{
-	header('location: message.php');
-	exit;
-}
-
-if (!$user->can_sell)
-{
-	header('location: user_menu.php?cptab=selling');
-	exit;
-}
+//if (in_array($user->user_data['suspended'], array(5, 6, 7)))
+//{
+//	header('location: message.php');
+//	exit;
+//}
+//
+//if (!$user->can_sell)
+//{
+//	header('location: user_menu.php?cptab=selling');
+//	exit;
+//}
 
 // Process category selection
 $box = (isset($_POST['box'])) ? $_POST['box'] + 1 : 0;
@@ -65,16 +65,16 @@ if (isset($_POST['action']) && $_POST['action'] == 'process' && $_POST['box'] ==
 	$lft_rgt = mysql_fetch_assoc($res);
 	if ($lft_rgt['left_id'] + 1 == $lft_rgt['right_id'])
 	{
-//		if ($system->SETTINGS['extra_cat'] == 'n' || ($cat_no == 2 && $system->SETTINGS['extra_cat'] == 'y'))
-//		{
-//			header('location: sell.php');
-//			exit;
-//		}
-//		else
-//		{
+		if ($system->SETTINGS['extra_cat'] == 'n' || ($cat_no == 2 && $system->SETTINGS['extra_cat'] == 'y'))
+		{
+			header('location: sell.php');
+			exit;
+		}
+		else
+		{
 			header('location: select_category.php?cat_no=2');
 			exit;
-//		}
+		}
 	}
 	else
 	{
@@ -219,6 +219,6 @@ $template->assign(array(
 
 //include 'header.php';
 //$template->set_filenames(array('body' => 'select_category.tpl'));
-$template->display('default/select_category.tpl');
+$template->display('select_category.tpl');
 //include 'footer.php';
 ?>

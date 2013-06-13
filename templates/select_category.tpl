@@ -21,7 +21,7 @@ function SubmitBoxes(N)
 		<tr>
 		  <td colspan="2" valign="top">
 			{if $CAT_NO eq 2}{#L_2__0041#} {$COST}{else}{#L_2__0038#}{/if}
-                        {$cat0}<br/>{$cat1}<br/>{$B_N}
+                        {*{$cat0}<br/>{$cat1}<br/>{$B_N}*}
 		  </td>
 		</tr>
 {if $ERROR}
