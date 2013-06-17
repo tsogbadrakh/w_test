@@ -215,6 +215,6 @@ $template->assign(array(
 
 //include 'header.php';
 //$template->set_filenames(array('body' => 'select_category.tpl'));
-$template->display('select_category.tpl');
+$template->display('sell_category.tpl');
 //include 'footer.php';
 ?>

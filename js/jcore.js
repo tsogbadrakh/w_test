@@ -351,30 +351,32 @@ jwbid.EventManager = mObj.extend({
     {
         var ev = Evnt.getEvent(e);
         var target = Evnt.getTarget(ev);
+        var jtar = $(target);
+        
         if(obj)
         {
            switch(type)
            {
                case Evnt.CLICK: 
-                   obj.onClick(target);
+                   obj.onClick && obj.onClick(jtar);
                    break;
                case Evnt.CHANGE: 
-                   obj.onChange(target);
+                   obj.onChange && obj.onChange(jtar);
                    break;
                case Evnt.KEYDOWN: 
-                   obj.onKeyDown(target);
+                   obj.onKeyDown && obj.onKeyDown(jtar);
                    break;
                case Evnt.KEYUP: 
-                   obj.onKeyUp(target);
+                   obj.onKeyUp && obj.onKeyUp(jtar);
                    break;
                case Evnt.MOUSEOVER: 
-                   obj.onMouseOver(target);
+                   obj.onMouseOver && obj.onMouseOver(jtar);
                    break;
                case Evnt.MOUSEOUT: 
-                   obj.onMouseOut(target);
+                   obj.onMouseOut && obj.onMouseOut(jtar);
                    break;
                case Evnt.MOUSEDOWN: 
-                   obj.onMouseDown(target);
+                   obj.onMouseDown && obj.onMouseDown(jtar);
                    break;
            }
        }
@@ -397,7 +399,7 @@ jwbid.HeadManager = mObj.extend({
             
     onClick : function(elmnt)
     {
-       var ID = elmnt.getAttribute("name");
+       var ID = elmnt.attr("name");
        switch(ID)
        {
            case "uLogin":
@@ -488,7 +490,7 @@ jwbid.HeadManager = mObj.extend({
      */
      callSellItemPage : function()
      {
-       jwbid.ajax.getHTML("select_category.php",function(data){
+       jwbid.ajax.getHTML("sell_category.php",function(data){
            $(".wb-middle").html(data);
        });
      },
@@ -546,7 +548,7 @@ jwbid.MenuManager = mObj.extend({
             
     onMouseOver : function(elmnt)
     {
-        var name = elmnt.getAttribute("name");
+        var name = elmnt.attr("name");
         
         switch(name)
         {
@@ -561,7 +563,7 @@ jwbid.MenuManager = mObj.extend({
      */
     menuClick : function(elmnt)
     {
-        var id = elmnt.getAttribute("id");
+        var id = elmnt.attr("id");
         
         jwbid.ajax.ajaxGET("browse.php",{
             "id": id
@@ -569,6 +571,7 @@ jwbid.MenuManager = mObj.extend({
             $(".wb-contents").html(data);
         }); 
     }    
+    
 });
 
 jwbid.BodyManager = mObj.extend({
@@ -585,12 +588,28 @@ jwbid.BodyManager = mObj.extend({
     
     onChange : function(elm)
     {
-        var nm = elm.getAttribute("name");
-        
+        var nm = elm.attr("name");
+
         if(nm.substr(0,3) == "cat")
         {
-            jwbid.ajax.getHTML("logout.php",function(data){
-                    $(".wb-middle").html(data);
+            var selOpt = elm.find(":selected");
+            var frm = $("#catform");
+            var hidInp = frm.find(":hidden");
+            var catName = nm + elm.attr("catid");
+            
+            var sendObj ={};
+            
+            sendObj[catName] = selOpt.attr("value");
+
+            jQuery.each(hidInp, function(i, hidInp){
+                sendObj[hidInp.name] = hidInp.value;
+            });
+            sendObj["box"] = elm.attr("catid");
+                    
+            jwbid.ajax.ajaxPOST("select_category.php",
+            sendObj
+            ,function(data){
+                    $("#selbx1").append(data);
             }); 
         }
     }
