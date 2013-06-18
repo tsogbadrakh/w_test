@@ -75,7 +75,7 @@ $system->check_mysql($res, $query, __LINE__, __FILE__);
 while ($row = mysql_fetch_assoc($res))
 {
         // Add a new iteration to this block with the variable assignments we were given.
-        $template->collect_vars( array(
+        $template->assign('cat_list', array(
 			'CATAUCNUM' => ($row['sub_counter'] != 0) ? '(' . $row['sub_counter'] . ')' : '',
 			'ID' => $row['cat_id'],
 			'IMAGE' => (!empty($row['cat_image'])) ? '<img src="' . $row['cat_image'] . '" border=0>' : '',
@@ -83,7 +83,6 @@ while ($row = mysql_fetch_assoc($res))
 			'NAME' => $category_names[$row['cat_id']]
 			));
 }
-$template->assign_blk('cat_list');
 
 // get featured items
 $query = "SELECT id, title, current_bid, pict_url, ends, num_bids, minimum_bid, bn_only, buy_now
@@ -108,7 +107,7 @@ while($row = mysql_fetch_assoc($res))
 	}
 	$high_bid = ($row['num_bids'] == 0) ? $row['minimum_bid'] : $row['current_bid'];
 	$high_bid = ($row['bn_only'] == 'y') ? $row['buy_now'] : $high_bid;
-	$template->collect_vars(array(
+	$template->assign('featured', array(
 			'ENDS' => $ends_string,
 			'ID' => $row['id'],
 			'BID' => $system->print_money($high_bid),
@@ -117,7 +116,6 @@ while($row = mysql_fetch_assoc($res))
 			));
 }
 $featured = $row ? TRUE : FALSE;
-$template->assign_blk('featured');
 
 // get last created auctions
 $query = "SELECT id, title, starts from " . $DBPrefix . "auctions
@@ -131,7 +129,7 @@ $system->check_mysql($res, $query, __LINE__, __FILE__);
 $i = 0;
 while ($row = mysql_fetch_assoc($res))
 {
-	$template->collect_vars(array(
+	$template->assign('auc_last', array(
 			'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 			'DATE' => ArrangeDateNoCorrection($row['starts'] + $system->tdiff),
 			'ID' => $row['id'],
@@ -139,7 +137,6 @@ while ($row = mysql_fetch_assoc($res))
 			));
 	$i++;
 }
-$template->assign_blk('auc_last');
 
 $auc_last = ($i > 0) ? true : false;
 // get ending soon auctions
@@ -161,7 +158,7 @@ while ($row = mysql_fetch_assoc($res))
 	{
 		$ends_string = $MSG['911'];
 	}
-	$template->collect_vars(array(
+	$template->assign('end_soon', array(
 			'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 			'DATE' => $ends_string,
 			'ID' => $row['id'],
@@ -169,7 +166,6 @@ while ($row = mysql_fetch_assoc($res))
 			));
 	$i++;
 }
-$template->assign_blk('end_soon');
 
 $end_soon = ($i > 0) ? true : false;
 // get hot items
@@ -196,7 +192,7 @@ while ($row = mysql_fetch_assoc($res))
         $ends_string = $MSG['911'];
     }
     $high_bid = ($row['num_bids'] == 0) ? $row['minimum_bid'] : $row['current_bid'];
-    $template->collect_vars(array(
+    $template->assign('hotitems', array(
         'ENDS' => $ends_string,
         'ID' => $row['id'],
         'BID' => $system->print_money($high_bid),
@@ -204,8 +200,6 @@ while ($row = mysql_fetch_assoc($res))
         'TITLE' => $row['title']
         ));
 }
-
-$template->assign_blk('hotitems');
         
 $hot_items = ($i > 0) ? true : false;
 
@@ -217,14 +211,14 @@ $system->check_mysql($res, $query, __LINE__, __FILE__);
 $i = 0;
 while ($faqscat = mysql_fetch_assoc($res))
 {
-	$template->collect_vars(array(
+	$template->assign('helpbox', array(
 			'ID' => $faqscat['id'],
 			'TITLE' => $faqscat['category']
 			));
 	$i++;
 }
 $helpbox = ($i > 0) ? true : false;
-$template->assign_blk('helpbox');
+
 // Build news list
 if ($system->SETTINGS['newsbox'] == 1)
 {
@@ -236,14 +230,13 @@ if ($system->SETTINGS['newsbox'] == 1)
 	$system->check_mysql($res, $query, __LINE__, __FILE__);
 	while ($new = mysql_fetch_assoc($res))
 	{
-		$template->collect_vars(array(
+		$template->assign('newsbox', array(
 				'ID' => $new['id'],
 				'DATE' => FormatDate($new['new_date']),
 				'TITLE' => (!empty($new['title'])) ? $new['title'] : $new['t']
 				));
 	}
         $newsbox = $new ? TRUE : FALSE;
-        $template->assign_blk('newsbox');
 }
 
 $template->assign(array(

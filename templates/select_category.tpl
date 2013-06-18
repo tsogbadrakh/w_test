@@ -1,3 +1,5 @@
+{$CAT_NO}
+
 {foreach $boxes as $bx}
             <td align="center" style="width:{$bx.PERCENT}%;">
                     <select name="cat" catid="{$bx.I}" class="box" size="15" style="width:230px;">

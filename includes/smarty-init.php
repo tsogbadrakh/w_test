@@ -31,22 +31,5 @@ class Smarty_Init extends Smarty {
         
         $this->configLoad('eng.conf');
    }
-   
-   // COLLECTING ARRAYS
-   function collect_vars ($array)
-   {
-       $row_count = (isset($this->data_arr)) ? sizeof($this->data_arr) : 0;
-       $this->data_arr[($row_count - 1)] = $array;
-   }
-   //ASSIGN FOR ARRAYS
-   function assign_blk ($name)
-   {
-       if(empty($this->data_arr)) return;
-       
-       $this->assign($name, $this->data_arr);
-       
-       $this->data_arr = array();
-   }
-
 }
 ?>

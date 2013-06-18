@@ -227,7 +227,7 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 			case 0 : $uimg = $system->SETTINGS['siteurl'] . 'images/neutral.png';
 				break;
 		}
-		$template->collect_vars(array(
+		$template->assign('fbs', array(
 				'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 				'IMG' => $uimg,
 				'USFLINK' => 'profile.php?user_id=' . $arrfeed['uId'] . '&auction_id=' . $arrfeed['auction_id'],
@@ -241,7 +241,6 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 				));
 		$i++;
 	}
-        $template->assign_blk('fbs');
 	$thispage = (isset($_GET['pg'])) ? $_GET['pg'] : 1;
 	$firstpage = (($thispage - 5) <= 0) ? 1 : ($thispage - 5);
 	$lastpage = (($thispage + 5) > $pages) ? $pages : ($thispage + 5);

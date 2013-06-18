@@ -590,12 +590,13 @@ jwbid.BodyManager = mObj.extend({
     {
         var nm = elm.attr("name");
 
-        if(nm.substr(0,3) == "cat")
+        if(nm.substr(0,3) == "cat") 
         {
             var selOpt = elm.find(":selected");
             var frm = $("#catform");
             var hidInp = frm.find(":hidden");
-            var catName = nm + elm.attr("catid");
+            var cid = elm.attr("catid");
+            var catName = nm + cid;
             
             var sendObj ={};
             
@@ -609,7 +610,12 @@ jwbid.BodyManager = mObj.extend({
             jwbid.ajax.ajaxPOST("select_category.php",
             sendObj
             ,function(data){
-                    $("#selbx1").append(data);
+                $(data).each(function(index){
+                    var resp = $(this).attr("catid");
+                    if(resp && resp != cid){
+                        $("#selbx1").append(data);
+                    }
+                });
             }); 
         }
     }

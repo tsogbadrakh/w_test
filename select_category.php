@@ -34,6 +34,7 @@ include $main_path . 'language/' . $language . '/categories.inc.php';
 //	header('location: user_menu.php?cptab=selling');
 //	exit;
 //}
+$IDX = 0;
 
 // Process category selection
 $box = (isset($_POST['box'])) ? $_POST['box'] + 1 : 0;
@@ -180,22 +181,18 @@ for ($i = 0; $i < $boxes; $i++)
         $catarr = Array();
 	foreach ($boxarray[$i] as $k => $v)
 	{
-                $row_count = (isset($catarr)) ? sizeof($catarr) : 0;
-                $catarr[($row_count - 1)] = 
-                                array(
+                $catarr[] = array(
 				'K' => $k,
 				'CATNAME' => $category_names[$k],
 				'SELECTED' => (isset($POST['cat' . $i]) && $POST['cat' . $i] == $k) ? ' selected' : ''
 				);
 	}
-        $row_cnt = (isset($tmpArray)) ? sizeof($tmpArray) : 0;
-        $tmpArray[($row_cnt - 1)] = ( array(
+        $template->assign('boxes', array(
 			'B_NOWLINE' => (($i % 2 == 0) && ($i > 0)),
 			'I' => $i,
 			'PERCENT' => ($boxes == 1) ? 100 : ($boxes == 2) ? 50 : 33,
 			'cats' => $catarr));
 }
-$template->assign('boxes', $tmpArray);
 
 $extra_cat = 0;
 if ($cat_no == 2)
