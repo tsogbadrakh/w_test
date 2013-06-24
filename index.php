@@ -75,7 +75,7 @@ $system->check_mysql($res, $query, __LINE__, __FILE__);
 while ($row = mysql_fetch_assoc($res))
 {
         // Add a new iteration to this block with the variable assignments we were given.
-        $template->assign('cat_list', array(
+        $template->append('cat_list', array(
 			'CATAUCNUM' => ($row['sub_counter'] != 0) ? '(' . $row['sub_counter'] . ')' : '',
 			'ID' => $row['cat_id'],
 			'IMAGE' => (!empty($row['cat_image'])) ? '<img src="' . $row['cat_image'] . '" border=0>' : '',
@@ -107,7 +107,7 @@ while($row = mysql_fetch_assoc($res))
 	}
 	$high_bid = ($row['num_bids'] == 0) ? $row['minimum_bid'] : $row['current_bid'];
 	$high_bid = ($row['bn_only'] == 'y') ? $row['buy_now'] : $high_bid;
-	$template->assign('featured', array(
+	$template->append('featured', array(
 			'ENDS' => $ends_string,
 			'ID' => $row['id'],
 			'BID' => $system->print_money($high_bid),
@@ -129,7 +129,7 @@ $system->check_mysql($res, $query, __LINE__, __FILE__);
 $i = 0;
 while ($row = mysql_fetch_assoc($res))
 {
-	$template->assign('auc_last', array(
+	$template->append('auc_last', array(
 			'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 			'DATE' => ArrangeDateNoCorrection($row['starts'] + $system->tdiff),
 			'ID' => $row['id'],
@@ -158,7 +158,7 @@ while ($row = mysql_fetch_assoc($res))
 	{
 		$ends_string = $MSG['911'];
 	}
-	$template->assign('end_soon', array(
+	$template->append('end_soon', array(
 			'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 			'DATE' => $ends_string,
 			'ID' => $row['id'],
@@ -192,7 +192,7 @@ while ($row = mysql_fetch_assoc($res))
         $ends_string = $MSG['911'];
     }
     $high_bid = ($row['num_bids'] == 0) ? $row['minimum_bid'] : $row['current_bid'];
-    $template->assign('hotitems', array(
+    $template->append('hotitems', array(
         'ENDS' => $ends_string,
         'ID' => $row['id'],
         'BID' => $system->print_money($high_bid),
@@ -211,7 +211,7 @@ $system->check_mysql($res, $query, __LINE__, __FILE__);
 $i = 0;
 while ($faqscat = mysql_fetch_assoc($res))
 {
-	$template->assign('helpbox', array(
+	$template->append('helpbox', array(
 			'ID' => $faqscat['id'],
 			'TITLE' => $faqscat['category']
 			));
@@ -230,7 +230,7 @@ if ($system->SETTINGS['newsbox'] == 1)
 	$system->check_mysql($res, $query, __LINE__, __FILE__);
 	while ($new = mysql_fetch_assoc($res))
 	{
-		$template->assign('newsbox', array(
+		$template->append('newsbox', array(
 				'ID' => $new['id'],
 				'DATE' => FormatDate($new['new_date']),
 				'TITLE' => (!empty($new['title'])) ? $new['title'] : $new['t']

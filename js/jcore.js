@@ -595,20 +595,20 @@ jwbid.BodyManager = mObj.extend({
             var selOpt = elm.find(":selected");
             var frm = $("#catform");
             var hidInp = frm.find(":hidden");
-            var cid = elm.attr("catid");
-            var catName = nm + cid;
+            var sboxId = elm.attr("catno");
             
             var sendObj ={};
             
-            sendObj[catName] = selOpt.attr("value");
-
             jQuery.each(hidInp, function(i, hidInp){
                 sendObj[hidInp.name] = hidInp.value;
             });
-            sendObj["box"] = elm.attr("catid");
+            
+            sendObj["cat_no"] = sboxId;
+            sendObj["cat_id"] = selOpt.attr("value");
+            sendObj["action"] = "nope";
+            sendObj["change"] = "yes";
                     
-            jwbid.ajax.ajaxPOST("select_category.php",
-            sendObj
+            jwbid.ajax.ajaxPOST("select_category.php", sendObj
             ,function(data){
                 $(data).each(function(index){
                     var resp = $(this).attr("catid");

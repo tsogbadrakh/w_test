@@ -227,7 +227,7 @@ if (isset($_GET['faction']) && $_GET['faction'] == 'show')
 			case 0 : $uimg = $system->SETTINGS['siteurl'] . 'images/neutral.png';
 				break;
 		}
-		$template->assign('fbs', array(
+		$template->append('fbs', array(
 				'BGCOLOUR' => (!($i % 2)) ? '' : 'class="alt-row"',
 				'IMG' => $uimg,
 				'USFLINK' => 'profile.php?user_id=' . $arrfeed['uId'] . '&auction_id=' . $arrfeed['auction_id'],

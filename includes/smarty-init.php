@@ -27,7 +27,8 @@ class Smarty_Init extends Smarty {
         $this->setConfigDir('../../htdocs/WeBid/configs/');
         $this->setCacheDir('../../htdocs/WeBid/cache/');
 
-        $this->caching = Smarty::CACHING_LIFETIME_CURRENT;
+        $this->clearAllCache();
+//        $this->setCaching(1);
         
         $this->configLoad('eng.conf');
    }

@@ -1,11 +1,6 @@
 {literal}
 <style type="text/css">.box {height: 100; width:300;}</style>
 <script type="text/javascript">
-function SubmitBoxes(N)
-{
-	$('#catformbox').val(N);
-	$('#catform').submit();
-}
 </script>
 {/literal}
 <div class="content">
@@ -13,10 +8,8 @@ function SubmitBoxes(N)
 	<div class="titTable2">{#L_028#}</div>
 		<a name="goto"></a>
 		<form name="catform" id="catform" action="select_category.php#goto" method="post">
-        <input type="hidden" name="csrftoken" value="{$_CSRFTOKEN}">
+                <input type="hidden" name="csrftoken" value="{$_CSRFTOKEN}">
 		<input type="hidden" name="action" value="process">
-		<input type="hidden" name="box" value="" id="catformbox">
-		<input type="hidden" name="cat_no" value="{$CAT_NO}">
 		<table width="80%" border="0" cellpadding="4" class="content">
 		<tr>
 		  <td colspan="2" valign="top">
@@ -32,21 +25,15 @@ function SubmitBoxes(N)
 		</tr>
 {/if}
 		<tr id="selbx1"> 
-{foreach $boxes as $bx}
-		  <td align="center" style="width:{$bx.PERCENT}%;">
-                            {*onClick="SubmitBoxes({$bx.I})"*}
-			  <select name="cat" catid="{$bx.I}" class="box" size="15" style="width:230px;">
-	{foreach $bx.cats as $bc}
-				<option value="{$bc.K}" {$bc.SELECTED}>{$bc.CATNAME}</option>
-	{/foreach}
+		  <td align="center" style="">
+			  <select name="cat" catno="0" class="box" size="15" style="width:230px;">
+                        {foreach $sbox as $bc}
+                                    <option value="{$bc.K}" {$bc.SELECTED}>{$bc.CATNAME}</option>
+                        {/foreach}
 			  </select>
 		   </td>
-        {if $bx.B_NOWLINE}
 		</tr>
-		<tr>
-	{/if}
-{/foreach}
-		</tr>
+		<tr></tr>
 		<tr>
 		  <td colspan="3">&nbsp;{*{$test}*}</td>
 		</tr>

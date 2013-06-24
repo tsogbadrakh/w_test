@@ -33,7 +33,7 @@ function browseItems($result, $feat_res, $total, $current_page, $extravar = '')
 			$difference = $row['ends'] - time();
 			$bgcolour = ($k % 2) ? 'bgcolor="#FFFEEE"' : '';
 
-			$template->assign('featured_items', array(
+			$template->append('featured_items', array(
 				'ID' => $row['id'],
 				'ROWCOLOUR' => ($row['highlighted'] == 'y') ? 'bgcolor="#fea100"' : $bgcolour,
 				'IMAGE' => $row['pict_url'],
@@ -63,7 +63,7 @@ function browseItems($result, $feat_res, $total, $current_page, $extravar = '')
 		$difference = $row['ends'] - time();
 		$bgcolour = ($k % 2) ? 'bgcolor="#FFFEEE"' : '';
 
-		$template->assign('items', array(
+		$template->append('items', array(
 			'ID' => $row['id'],
 			'ROWCOLOUR' => ($row['highlighted'] == 'y') ? 'bgcolor="#fea100"' : $bgcolour,
 			'IMAGE' => $row['pict_url'],
@@ -90,7 +90,7 @@ function browseItems($result, $feat_res, $total, $current_page, $extravar = '')
 		$COUNTER = $LOW;
 		while ($COUNTER <= $PAGES && $COUNTER < ($PAGE+6))
 		{
-			$template->assign('pages', array(
+			$template->append('pages', array(
 				'PAGE' => ($PAGE == $COUNTER) ? '<b>' . $COUNTER . '</b>' : '<a href="' . $system->SETTINGS['siteurl'] . $current_page . '?PAGE=' . $COUNTER . $extravar . '"><u>' . $COUNTER . '</u></a>'
 			));
 			$COUNTER++;
