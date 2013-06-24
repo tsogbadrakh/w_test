@@ -147,7 +147,6 @@ while($cat = mysql_fetch_assoc($res))
 {
         $temparray[] = $catscontrol->get_children_list($cat['left_id'], $cat['right_id']);
 //    
-        $template->append('CATL', $temparray);
 //    
 //    if (count($temparray) > 0)
 //    {
@@ -163,9 +162,9 @@ while($cat = mysql_fetch_assoc($res))
 //    }
 }
 $catarr = Array();
-foreach ($boxarray as $k => $v)
+foreach ($temparray as $k => $v)
 {
-        $temparray->append('sbox', array(
+        $template->append('sbox', array(
                         'K' => $k,
                         'CATNAME' => $category_names[$k],
                         'SELECTED' => (isset($cat_id) && $cat_id == $k) ? ' selected' : '',

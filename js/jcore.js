@@ -611,8 +611,8 @@ jwbid.BodyManager = mObj.extend({
             jwbid.ajax.ajaxPOST("select_category.php", sendObj
             ,function(data){
                 $(data).each(function(index){
-                    var resp = $(this).attr("catid");
-                    if(resp && resp != cid){
+                    var resp = $(this).attr("catno");
+                    if(resp && resp != sboxId){
                         $("#selbx1").append(data);
                     }
                 });
