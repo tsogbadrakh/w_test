@@ -490,7 +490,7 @@ jwbid.HeadManager = mObj.extend({
      */
      callSellItemPage : function()
      {
-       jwbid.ajax.getHTML("sell_category.php",function(data){
+       jwbid.ajax.getHTML("select_category.php",function(data){
            $(".wb-middle").html(data);
        });
      },
@@ -602,22 +602,17 @@ jwbid.BodyManager = mObj.extend({
             jQuery.each(hidInp, function(i, hidInp){
                 sendObj[hidInp.name] = hidInp.value;
             });
-            
+           
             sendObj["cat_no"] = sboxId;
             sendObj["cat_id"] = selOpt.attr("value");
             sendObj["action"] = "nope";
-            sendObj["change"] = "yes";
+            sendObj["onsel"] = "true";
                     
             jwbid.ajax.ajaxPOST("select_category.php", sendObj
             ,function(data){
-                $(data).each(function(index){
-                    var resp = $(this).attr("catno");
-                    if(resp && resp != sboxId){
-                        $("#selbx1").append(data);
-                    }
-                });
+                var html = $.parseHTML(data);
             }); 
         }
-    }
+    },
     
 });

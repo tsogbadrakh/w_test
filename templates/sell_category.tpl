@@ -20,7 +20,7 @@
 {if $ERROR}
 		<tr> 
 		  <td colspan="2" class="errfont">
-			{$ERROR}sadasdas
+			{$ERROR}
 		  </td>
 		</tr>
 {/if}

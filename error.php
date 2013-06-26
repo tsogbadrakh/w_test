@@ -15,16 +15,10 @@
 $error = true;
 include 'includes/common.inc.php';
 
-$template->assign_vars(array(
+$template->assign(array(
 		'ERROR' => print_r($_SESSION['SESSION_ERROR'], true),
 		'DEBUGGING' => false, // set to true when trying to fix the script
 		'ERRORTXT' => $system->SETTINGS['errortext']
 		));
-
-include 'header.php';
-$template->set_filenames(array(
-		'body' => 'error.tpl'
-		));
-$template->display('body');
-include 'footer.php';
+$template->display('error.tpl');
 ?>
