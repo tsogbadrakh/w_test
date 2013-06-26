@@ -12,8 +12,6 @@ require_once(SMARTY_DIR . 'Smarty.class.php');
 
 class Smarty_Init extends Smarty {
     
-   var $data_arr = array();
-
    function __construct()
    {
 

@@ -610,8 +610,8 @@ jwbid.BodyManager = mObj.extend({
                     
             jwbid.ajax.ajaxPOST("select_category.php", sendObj
             ,function(data){
-                var html = $.parseHTML(data);
-            }); 
+                $("#selbx1").append(data);
+                }); 
         }
     },
     
