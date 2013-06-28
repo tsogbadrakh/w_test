@@ -47,16 +47,17 @@ require($include_path . 'smarty-init.php');
 $system = new global_class();
 //$template = new template();
 $template = new Smarty_Init();
-function json_modifier($value) {
-    return json_encode($value);
-}
 
-function json_function($params, &$template) {
-    return json_encode($params);
-}
-
-$template->registerPlugin('modifier','json', 'json_modifier');
-$template->registerPlugin('function','json', 'json_function');
+//function json_modifier($value) {
+//    return json_encode($value);
+//}
+//
+//function json_function($params, &$template) {
+//    return json_encode($params);
+//}
+//
+//$template->registerPlugin('modifier','json', 'json_modifier');
+//$template->registerPlugin('function','json', 'json_function');
 
 $user = new user();
 set_error_handler('WeBidErrorHandler', $error_reporting);

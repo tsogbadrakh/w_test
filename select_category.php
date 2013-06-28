@@ -155,9 +155,9 @@ $template->assign('PERCENT' , 100/ ($cat_no + 1));
 foreach ($boxarray as $k => $v)
 {
         $template->append('sbox', array(
-                        'K' => $k,
-                        'CATNAME' => $category_names[$k],
-                        'SELECTED' => ($cat_id == $k) ? ' selected' : ''
+                        'value' => $k,
+                        'catname' => $category_names[$k],
+                        'selected' => ($cat_id == $k) ? ' selected' : ''
                         ));
 }
 
@@ -170,7 +170,12 @@ if ($cat_no == 2)
 	$extra_cat = mysql_result($res, 0);
 }
 
-$template->assign(array(
+$onsel ? $template->assign('SETTING', array(
+                'B_SHOWBUTTON' => $SHOWBUTTON,
+		'CAT_NO' => $cat_no + 1,
+		'COST' => ($extra_cat > 0) ? $system->print_money($extra_cat) : '',
+                'ERROR' => (isset($ERR)) ? $ERR : ''
+        )) : $template->assign(array(
                 'B_SHOWBUTTON' => $SHOWBUTTON,
 		'CAT_NO' => $cat_no + 1,
 		'COST' => ($extra_cat > 0) ? $system->print_money($extra_cat) : '',

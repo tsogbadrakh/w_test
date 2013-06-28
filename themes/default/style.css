@@ -218,6 +218,23 @@ input[type="text"], input[type="password"], select, textarea {
 .wb-logout-btn , .wb-reg-btn{
     float: right;
 }
+.wb-slct-tab
+{
+    margin: auto;
+    width: 90%;
+}
+.wb-slct-title
+{
+    background-color: #EEEEEE;
+    border: 1px solid #C9C9C9;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 5px auto;
+    padding: 5px 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
 
 
 

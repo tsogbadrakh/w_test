@@ -596,6 +596,7 @@ jwbid.BodyManager = mObj.extend({
             var frm = $("#catform");
             var hidInp = frm.find(":hidden");
             var sboxId = elm.attr("catno");
+            var self = this;
             
             var sendObj ={};
             
@@ -610,9 +611,28 @@ jwbid.BodyManager = mObj.extend({
                     
             jwbid.ajax.ajaxPOST("select_category.php", sendObj
             ,function(data){
-                $("#selbx1").append(data);
-                }); 
+                var selObj = $.parseJSON(data);
+                if(selObj && !selObj.OPTION.B_SHOWBUTTON &&!this.isCr8dCat(nm, selObj.OPTION.CAT_NO))
+                {
+                    $("#selbx1").append(selObj.shtml);
+                }
+                else if(selObj.OPTION.B_SHOWBUTTON)
+                {
+                    frm[0].submitit.style.display="block";
+                }
+            }.attach(this)); 
         }
     },
     
+    isCr8dCat : function(catname, id)
+    {
+        var allCat = $('select[name="' + catname +'"]');
+        var ret = false;
+        
+        allCat.each(function(index){
+           $(this).attr("catno") == id && (ret = true);
+        });
+        
+        return ret;
+    }
 });

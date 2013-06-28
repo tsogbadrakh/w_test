@@ -57,7 +57,7 @@
 <body class="wb-body">
 <div class="wb-header">
     <div class="wb-top">
-        <div class="wb-top-logo">{$LOGO}</div>
+        {*<div class="wb-top-logo">{$LOGO}</div>*}
         <div class="wb-top-login" style="display: block;">
                 {if $B_LOGGED_IN}
                     <a class="gh-ua" id="gh-ug" href="#">{#L_200#}, <strong>{$YOURUSERNAME}</strong>!
